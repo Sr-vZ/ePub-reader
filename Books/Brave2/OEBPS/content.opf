@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<package xmlns="http://www.idpf.org/2007/opf" unique-identifier="bookid" version="2.0">
+	<metadata xmlns:dc="http://purl.org/dc/elements/1.1/">
+		<meta name="generator" content="Adobe InDesign 9.0" />
+		<meta name="cover" content="x203.png" />
+		<dc:title>book 2</dc:title>
+		<dc:creator></dc:creator>
+		<dc:subject></dc:subject>
+		<dc:description></dc:description>
+		<dc:publisher></dc:publisher>
+		<dc:date>2018-03-12</dc:date>
+		<dc:source></dc:source>
+		<dc:relation></dc:relation>
+		<dc:coverage></dc:coverage>
+		<dc:rights></dc:rights>
+		<dc:identifier id="bookid">urn:uuid:09a0a36e-c111-41ec-9bd1-c368a6782b0b</dc:identifier>
+	</metadata>
+	<manifest>
+		<item id="book-2" href="book-2.xhtml" media-type="application/xhtml+xml" />
+		<item id="ncx" href="toc.ncx" media-type="application/x-dtbncx+xml" />
+		<item id="idGeneratedStyles.css" href="css/idGeneratedStyles.css" media-type="text/css" />
+		<item id="x1_fmt.png" href="image/1_fmt.png" media-type="image/png" />
+		<item id="x203.png" href="image/203.png" media-type="image/png" />
+		<item id="x2_fmt.png" href="image/2_fmt.png" media-type="image/png" />
+		<item id="x3_fmt.png" href="image/3_fmt.png" media-type="image/png" />
+		<item id="x4_fmt.png" href="image/4_fmt.png" media-type="image/png" />
+		<item id="x5_fmt.png" href="image/5_fmt.png" media-type="image/png" />
+		<item id="x6_fmt.png" href="image/6_fmt.png" media-type="image/png" />
+		<item id="x7_fmt.png" href="image/7_fmt.png" media-type="image/png" />
+		<item id="x8_fmt.png" href="image/8_fmt.png" media-type="image/png" />
+		<item id="x9_fmt.png" href="image/9_fmt.png" media-type="image/png" />
+	</manifest>
+	<spine toc="ncx">
+		<itemref idref="book-2" />
+	</spine>
+</package>
