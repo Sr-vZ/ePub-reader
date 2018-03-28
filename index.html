@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html class="no-js">
+<html>
     <head>
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
@@ -67,12 +67,12 @@
         </style>
 
          <script>
-            //"use strict";
+            "use strict";
             //var epubSrc="https://crossorigin.me/https://s3-us-west-2.amazonaws.com/pressbooks-samplefiles/GalbraithColorTheme/Beyond-Good-and-Evil-Galbraithcolor.epub";
-            //var epubSrc = "Beyond-Good-and-Evil-Galbraithcolor.epub";
-            //var epubSrc = "https://crossorigin.me/https://cdn.rawgit.com/Sr-vZ/ePub-reader/ceb375b7/Books/Brave2.epub";
+            //var epubSrc = "Book 3 epub Low Res.epub";
+            var epubSrc = "https://crossorigin.me/https://github.com/Sr-vZ/ePub-reader/tree/master/Books/Brave2/";
             //var epubSrc = "https://crossorigin.me/https://www.dropbox.com/s/1uyxdf9zjqt6ds6/Book%203%20epub%20Low%20Res.epub?dl=0";
-            var epubSrc ="https://crossorigin.me/https://cdn.rawgit.com/Sr-vZ/ePub-reader/4390367c/Books/Book%203%20epub%20Low%20Res.epub";
+            //var epubSrc ="https://crossorigin.me/https://cdn.rawgit.com/Sr-vZ/ePub-reader/4390367c/Books/Book%203%20epub%20Low%20Res.epub";
             // $.get(epubSrc,function(res){
             //   epubReader(epubSrc);
             // });
@@ -88,7 +88,27 @@
               fixedLayout : true
             });
             }
-            epubReader(epubSrc);
+            //epubReader(epubSrc);
+
+            function epubReader2(src) {
+              
+              $.getJSON(epubSrc,function (res) {
+                    Book = ePub({
+                      bookPath: res,
+                      //contained: true,
+                      //width: 400,
+                      //height: 600,
+                      spreads: true,
+                      //restore: true,
+                      fixedLayout: true
+                    });
+                      Book.renderTo("area").then(function () {
+                        //Book.setStyle("width", "400px");
+                      });
+                      Book.forceSingle();
+              })
+              epubReader2(epubSrc); 
+              }
         </script>
     </head>
     <body>
@@ -99,15 +119,15 @@
       </div>
 
           
-        </div>
+        
 
         <script>
           
-            Book.renderTo("area").then(function(){
-              //Book.setStyle("width", "400px");
+            // Book.renderTo("area").then(function(){
+            //   //Book.setStyle("width", "400px");
             
-            }); 
-            Book.forceSingle(); 
+            // }); 
+            // Book.forceSingle(); 
             
                         
             
